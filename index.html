@@ -5,15 +5,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script type="module" src="https://unpkg.com/@lottiefiles/dotlottie-wc@latest/dist/dotlottie-wc.js"></script>;
 </head>
 <body>
     <section class="screen1">
-        <div id="lottie"></div>
+        <!-- <div id="scheme"></div> -->
+        <dotlottie-wc
+            src="https://lottie.host/c575a7b8-6ebb-4696-a69d-03b2b8f960de/xHKvpDfwDE.lottie"
+            id="scheme"
+            autoplay
+            loop
+        ></dotlottie-wc>
+        <dotlottie-wc
+            src="https://lottie.host/2663c52e-a453-4689-bd02-3fa14ebe43a5/CWIjr7dM09.lottie"
+            id="circs"
+            autoplay
+            loop
+        ></dotlottie-wc>
         <div class="main-text1">
-            <p>Wanko<br>Technologis</p>
+            <p>Wanko<br>&nbsp;Technologis</p>
         </div>
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+    <section class="screen2">
+        <div class="scheme2">
+            <img src="./assets/scheme2.svg" alt="">
+        </div>
+        <div class="main-content2">
+            <div class="left-side2">
+                <div class="left-window">
+                    <div class="circs-col">
+                        <div class="circs-row">
+                            <div class="circ"></div>
+                            <div class="circ"></div>
+                            <div class="circ"></div>
+                        </div>
+                        <div class="circs-row">
+                            <div class="circ"></div>
+                            <div class="circ"></div>
+                            <div class="circ black"></div>
+                        </div>
+                        <div class="circs-row">
+                            <div class="circ black"></div>
+                            <div class="circ"></div>
+                            <div class="circ black"></div>
+                        </div>
+                        <div class="circs-row">
+                            <div class="circ black"></div>
+                            <div class="circ black"></div>
+                            <div class="circ"></div>
+                        </div>
+                        <div class="circs-row">
+                            <div class="circ"></div>
+                            <div class="circ"></div>
+                            <div class="circ pink"></div>
+                        </div>
+                        <div class="circs-row">
+                            <div class="circ yellow"></div>
+                            <div class="circ"></div>
+                            <div class="circ"></div>
+                        </div>
+                    </div>
+                    <div class="vectors-row">
+                        <img class="left-vec" src="./assets/tag-on-window.svg" alt="">
+                        <img class="right-vec" src="./assets/Vector1.svg" alt="">
+                    </div>
+                    <div class="media-viewer hidden">
+                        <img id="media-image" src="" alt="">
+                     </div>
+                </div>
+                <div class="left-bottom-row">
+                    <div class="trian-row">
+                        <div class="triangle"></div>
+                        <div class="triangle"></div>
+                        <div class="triangle"></div>
+                        <div class="triangle"></div>
+                        <div class="triangle"></div>
+                    </div>
+                    <div class="black-panel"></div>
+                </div>
+            </div>
+            <div class="right-side2">
+                <div class="right-top-title">
+                    <p>WankoTech Technologis</p>
+                </div>
+                <div class="right-bottom-side2">
+                    <div class="right-cols1">
+                        <div class="right-titles" id="btn-limbs">
+                            <p>Конечности</p>
+                        </div>
+                        <div class="black-panel right-panel"></div>
+                    </div>
+                    <div class="right-cols2">
+                        <div class="black-panel right-panel"></div>
+                        <div class="right-titles" id="btn-organs">
+                            <p>Органы</p>
+                        </div>
+                        <div class="black-panel right-panel"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="screen3">
+        <div class="lines-col">
+            <div class="lines"></div>
+            <div class="lines"></div>
+            <div class="lines"></div>
+        </div>
+        <div class="scheme-col">
+            <div class="on-scheme">
+                <div class="circ-on-scheme"></div>
+            </div>
+            <div class="energy-block"></div>
+        </div>
+        <div class="block-scheme"></div>
+    </section>
+    <section class="screen4">
+        <div class="arm-col">
+            <div class="title4">
+                <p>Luke Arm #0017</p>
+            </div>
+            <div class="puzzle-box">
+                <div class="cell pos-1"><img src="./assets/arm1.svg" alt=""></div>
+                <div class="cell pos-2 empty"></div>
+                <div class="cell pos-3"><img src="./assets/arm3.svg" alt=""></div>
+                <div class="cell pos-4"><img src="./assets/arm2.svg" alt=""></div>
+            </div>
+            <div class="bottom-text4">
+                <div class="black-panel panel4"></div>
+                <p>&nbsp;Archieve</p>
+            </div>
+        </div>
+        <div class="inf-col">
+            <div class="inf-side">
+                <div class="inf-block">
+                    <div class="type-button">
+                        <div class="white-circ"></div>
+                    </div>
+                    <p>LUKE Arm способна выполнять<br> десятки видов движений,<br> включая сложные захваты,<br> и управляется мышечными<br> сигналами пользователя.<br> В некоторых конфигурациях<br> она также может передавать<br> тактильные ощущения <br>через нейронные интерфейсы</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="screen5">
+        <div class="board">
+            <div class="sensor"></div>
+            <div class="display">
+                <canvas id="paint-canvas"></canvas>
+                <div class="buttons-col">
+                    <button class="button-clear" type="button" aria-label="Clear"></button>
+                    <button class="button-random-color" type="button" aria-label="Random pink color"></button>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
