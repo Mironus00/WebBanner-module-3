@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const blackPanels = document.querySelectorAll('.black-panel');
     blackPanels.forEach(panel => {
     setInterval(() => {
-        const randomWidth = 50 + Math.random() * 50; // от 30% до 70%
+        const randomWidth = 50 + Math.random() * 50;
         panel.style.width = `${randomWidth}%`;
     }, 120);
     });
